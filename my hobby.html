@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+</style>
+    <title>My Hobby</title>
+</head>
+<title>My Hobby</title>
+<style>
+  body {
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 20px;}
+    h1 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: 'Momo Trust Display', sans-serif;
+        font-weight: 400;
+    }
+    article:hover {
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      margin-top: 16px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    .video-wrap:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.10);
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-caption {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+      margin-top: 8px;
+    }
+    /* Make top images fill their card and match rounded corners */
+    article { overflow: hidden; }
+    .full-img {
+      display: block;
+      width: calc(100% + 40px);
+      margin: -20px -20px 15px;
+      height: 220px;
+      object-fit: cover;
+    }
+    /* Navigation bar styles */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      margin: 12px 0 20px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: background 0.18s ease, color 0.18s ease;
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      background: #f0f0f0;
+    }
+    @media (max-width: 600px) {
+      .navbar ul { flex-direction: column; gap: 8px; }
+    }
+.container { width: 100%; max-width: none; margin: 0; padding: 0 20px; box-sizing: border-box; }
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) { .cards-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .cards-grid { grid-template-columns: 1fr; } }
+
+.cards-section { grid-column: 1 / -1; width: 100%; }
+body { margin: 0; padding: 20px; }
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+.card { overflow: hidden; }
+
+.card .card-top-img {
+  display: block;
+  width: calc(100% + 60px);
+  margin: -30px -30px 15px;
+  height: 450px;
+  object-fit: cover;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+.card-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+.card h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+.card p {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+/* Make cards clickable as links */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+.see-more-btn {
+  display: inline-block;
+  background-color: #bd0202;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 30px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(189, 2, 2, 0.3);
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.see-more-btn:hover {
+  background-color: #8a0101;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(189, 2, 2, 0.4);
+}
+</style>
+<body>
+    <h1>My Favorite Hobby</h1>
+    <nav class="navbar" aria-label="Main navigation">
+      <ul>
+        <li><a href="my hobby.html">Home</a></li>
+        <li><a href="football.html">About</a></li>
+        <li><a href="players.html">Players & Game</a></li>
+        <li><a href="Videos.html">Matches</a></li>
+        <li><a href="more.html">More</a></li>
+      </ul>
+    </nav>
+   <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px;">
+  <article style="grid-row: span 2; padding: 20px; background: #e6e6e6;border-radius: 20px;text-decoration: none;" href="football.html">
+    <h2 style="font-family: 'Momo Trust Display', sans-serif; font-weight: 400;">Why I Like Football</h2>
+    <hr style="border: none; height: 2px; background-color: #bd0202; margin-bottom: 20px;">
+    <img src="football.jfif" alt="Football Image" style="width: 100%; height: auto; margin-bottom: 15px; border-radius: 10px;">
+    <img src="football2.avif" alt="Football Image" style="width: 100%; height: auto; margin-bottom: 15px; border-radius: 10px;">
+
+    <p style="font-family: 'Outfit', sans-serif; font-size: 16px; line-height: 1.5; font-weight: 400;">
+        Football is my favorite hobby. I enjoy playing football with my friends every weekend. It helps me stay active and healthy. Watching football matches on TV is also exciting, especially during major tournaments like the Premier League. The teamwork and strategy involved in football make it a fascinating sport to follow.
+    </p>
+  </article>
+  <article style="grid-row: span 2; padding: 20px; background: #f5baba;border-radius: 20px;">
+    <h2 style="font-family: 'Momo Trust Display', sans-serif; font-weight: 400;">My Favorite Team — Arsenal</h2>
+    <hr style="border: none; height: 2px; background-color: #bd0202; margin-bottom: 20px;">
+    <img src="saka.jpg" alt="Arsenal Logo" style="width: 100%; height: auto; border-radius: 10px 10px 0px 0px;">
+    <img src="arsenal.avif" alt="Kieran Tierney" style="width: 100%; height: auto; margin-bottom: 15px; border-radius: 0px 0px 0px 0px;">
+    <img src="arsenal 3.avif" alt="Invincibles" style="width: 100%; height: auto; margin-bottom: 15px; border-radius: 0px 0px 10px 10px;">
+
+    <p style="font-family: 'Outfit', sans-serif; font-size: 14px; line-height: 1.5; font-weight: 400;">
+        Arsenal is my favorite team because of their attacking style, rich history and emphasis on young talent. I enjoy following their matches, the teamwork on display and the atmosphere at the Emirates. Supporting Arsenal connects me with friends and makes watching football more enjoyable.
+    </p>
+  </article>
+  <section class="cards-section">
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 20px; color: #000000;font-family:'Momo Trust Display', sans-serif;font-weight: 400;">My Favorite Players</h2>
+    <div class="cards-grid">
+      <a href="https://www.arsenalfc.com" target="_blank" class="card-link">
+        <div class="card">
+          <div class="card-icon"><img src="rice.jfif" alt="Declan Rice" class="card-top-img"></div>
+          <h3>Declan Rice</h3>
+          <p>Arsenal's central midfield maestro</p>
+        </div>
+      </a>
+      <a href="https://www.premierleague.com" target="_blank" class="card-link">
+        <div class="card">
+          <div class="card-icon"><img src="saka.jpg" alt="Bukayo Saka" class="card-top-img"></div>
+          <h3>Bukayo Saka</h3>
+          <p>Arsenal's dynamic winger</p>
+        </div>
+      </a>
+      <a href="https://www.fifa.com" target="_blank" class="card-link">
+        <div class="card">
+          <div class="card-icon"><img src="martinelli.jpg" alt="Gabriel Martinelli" class="card-top-img"></div>
+          <h3>Gabriel Martinelli</h3>
+          <p>Arsenal's explosive fearless winger</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <a href="players.html" class="see-more-btn">See More →</a>
+  </div>
+ <footer style="text-align: center; margin-top: 40px; font-size: 14px;background-color: darkred;color:white;height:60px;width:100vw;padding-top: 30px;font-family: 'Outfit', sans-serif;">
+       <p style="text-align: center;">&copy; Nattsit Chaikitmongkol No.4 M.3/3 My Favorite Hobby</p></footer>
+</body>
+ 
+</html>

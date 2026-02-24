@@ -1,0 +1,183 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>Football</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        body {
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #000000;
+            text-align: center;
+            font-family: 'Momo Trust Display', sans-serif;
+            font-weight: 400;
+        }
+        .navbar {
+          display: flex;
+          justify-content: center;
+          margin: 12px 0 20px;
+          font-family: 'Outfit', sans-serif;
+        }
+        .navbar ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          gap: 18px;
+          align-items: center;
+        }
+        .navbar a {
+          text-decoration: none;
+          color: #333;
+          padding: 8px 14px;
+          border-radius: 8px;
+          transition: background 0.18s ease, color 0.18s ease;
+          font-weight: 500;
+        }
+        .navbar a:hover {
+          background: #f0f0f0;
+        }
+             p {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #333;
+          margin: 20px 80px;
+          text-align: justify;
+          font-family: 'Outfit', sans-serif;
+        }
+        .video-container {
+          max-width: 900px;
+          margin: 30px auto;
+          padding: 0 20px;
+        }
+        .video-player {
+          position: relative;
+          width: 100%;
+          border-radius: 15px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+          overflow: hidden;
+          cursor: pointer;
+        }
+        .video-player img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        .play-button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 80px;
+          height: 80px;
+          background-color: rgba(220, 0, 0, 0.9);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+        .play-button:after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-left: 28px solid white;
+          border-top: 18px solid transparent;
+          border-bottom: 18px solid transparent;
+          margin-left: 6px;
+        }
+        .video-player:hover .play-button {
+          background-color: rgb(206, 193, 193);
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+        .video-title {
+          font-family: 'Momo Trust Display', sans-serif;
+          font-size: 24px;
+          font-weight: 400;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          color: #000;
+        }
+        .video-description {
+          font-family: 'Outfit', sans-serif;
+          font-size: 20px;
+          color: #555;
+          line-height: 1.6;
+          margin-bottom: 30px;
+          margin-left: 1px;
+          text-align: left;
+          
+        }
+        .timestamp p{
+          font-family: 'Outfit', sans-serif;
+          font-size: 16px;
+          color: #333;
+          line-height: 1.5;
+          margin-bottom: 0px;
+          text-align: left;
+          margin-left: 1px;
+        }
+        </style>
+</head>
+<body>
+     <h1>My Favorite Hobby</h1>
+    <nav class="navbar" aria-label="Main navigation">
+      <ul>
+        <li><a href="my hobby.html">Home</a></li>
+        <li><a href="football.html">About</a></li>
+        <li><a href="players.html">Players & Game</a></li>
+        <li><a href="Videos.html">Videos</a></li>
+        <li><a href="#">More</a></li>
+      </ul>
+    </nav>
+    <h2 style="text-align: left; margin-bottom: 20px; margin-left: 50px; color: #000000;font-family:'Momo Trust Display', sans-serif;font-weight: 400;">Football Matches I recommend you watch</h2>
+    <hr style="height: 2px; margin-bottom: 20px;background-color: black;border: none;">
+    
+    <div class="video-container">
+      <a href="https://www.youtube.com/watch?v=WlncPHUm_vQ" target="_blank" style="text-decoration: none;">
+        <div class="video-player">
+          <img src="https://img.youtube.com/vi/WlncPHUm_vQ/maxresdefault.jpg" alt="Video Thumbnail">
+          <div class="play-button"></div>
+        </div>
+      </a>
+      <h3 class="video-title">Arsenal 5 - 1 Manchester City</h3>
+      <p class="video-description">Arsenal delivered a stunning performance in Matchweek 24 of the 2024-25 Premier League, beating reigning champions Manchester City 5–1 at home — one of their biggest ever wins over City and their biggest against the title holders in Premier League history.</p>
+      <div class="timestamp"><h4>Key moments & goals</h4>
+
+<p>2′ – Martin Ødegaard opened the scoring early for Arsenal. </p>
+<p>55′ – Erling Haaland equalised for Man City with a header.</p> 
+<p>56′ – Thomas Partey regained the lead. </p>
+<p>62′ – Myles Lewis-Skelly struck with his first senior goal. </p>
+<p>76′ – Kai Havertz added a fourth. </p>
+<p>90+3′ – Ethan Nwaneri sealed the rout with a stoppage-time finish.</p>
+</div>
+    </div>
+    <div class="video-container">
+      <a href="https://www.youtube.com/watch?v=aNiPmGUpQC0" target="_blank" style="text-decoration: none;">
+        <div class="video-player">
+          <img src="https://img.youtube.com/vi/aNiPmGUpQC0/maxresdefault.jpg" alt="Video Thumbnail">
+          <div class="play-button"></div>
+        </div>
+      </a>
+      <h3 class="video-title">Inter Milan 4 - 3 Barcelona</h3>
+      <p class="video-description">Inter produced an unforgettable night in the 2024–25 Champions League semi-final second leg, coming from behind to beat Barcelona 4–3 after extra time at the San Siro in a dramatic encounter that saw late goals, stunning saves, and a decisive extra-time strike to seal a 7–6 aggregate victory and send the Italians into the final.</p>
+      <div class="timestamp"><h4>Key moments & goals</h4>
+
+<p>21′ — Lautaro Martínez opens the scoring with a clinical finish.</p> 
+<p>45+1′ — Hakan Çalhanoğlu converts a penalty just before half-time to make it 2-0.</p>
+<p>54′ — Eric García pulls one back with a powerful volley.</p>
+<p>60′ — Dani Olmo heads home to level it at 2-2 on the night.</p>
+<p>87′ — Raphinha slots in what looks like the winning goal to put Barça ahead 3-2.</p>
+<p>90+3′ — Francesco Acerbi scores a dramatic stoppage-time equalizer to make it 3-3 — forcing extra time.</p>
+<p>99′ — Davide Frattesi curls in the winner to make it 4-3 on the night and send Inter into the final.</p>
+
+</div>
+<footer style="text-align: center; margin-top: 40px; font-size: 14px;background-color: darkred;color:white;height:60px;width:100vw;padding-top: 30px;">
+       <p style="text-align: center;">&copy; Nattsit Chaikitmongkol No.4 M.3/3 My Favorite Hobby</p></footer>
+
+</body>
